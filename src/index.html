@@ -42,8 +42,8 @@
 
             event.target.classList.add(
                 "bg-gradient-to-r",
-                "from-blue-600",
-                "to-purple-600",
+                "from-blue-800",
+                "to-gray-800",
                 "text-white",
                 "shadow-lg",
                 "scale-105"
@@ -85,10 +85,10 @@
                 </div>
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
-                    <a href="#about"><button class="bg-gradient-to-r from-blue-800 to-purple-800 rounded-[10px] text-white h-12 w-full sm:w-48 hover:from-purple-600 hover:to-blue-500 transition">
+                    <a href="#projects"><button class="bg-gradient-to-r from-[#102848] via-[#354861] to-[#102848] rounded-[10px] text-white h-12 w-full sm:w-48 hover:from-purple-600 hover:to-blue-500 transition">
                         View My Work
                     </button></a>
-                    <a href="#contact"><button class="bg-gradient-to-r from-blue-800 to-purple-800 rounded-[10px] text-white h-12 w-full sm:w-36 hover:from-purple-600 hover:to-blue-500 transition">
+                    <a href="#contact"><button class="bg-gradient-to-r from-[#102848] via-[#354861] to-[#102848] rounded-[10px] text-white h-12 w-full sm:w-36 hover:from-purple-600 hover:to-blue-500 transition">
                         Get in Touch
                     </button></a>
                 </div>
@@ -188,18 +188,18 @@
             <div class="flex flex-wrap justify-center gap-4 mb-16">
 
                 <button onclick="showSkills('web')" class="skill-tab px-6 py-2 rounded-full font-semibold transition duration-300
-               bg-gradient-to-r from-blue-600 to-purple-600 text-white
+               bg-gradient-to-r from-[#102848] via-[#354861] to-[#102848] text-white
                hover:scale-105 hover:shadow-lg">
                     Web Development
                 </button>
 
-                <button onclick="showSkills('programming')" class="skill-tab px-6 py-2 rounded-full bg-gray-300 text-gray-800 font-semibold
-               transition duration-300 hover:scale-105 hover:bg-gray-400">
+                <button onclick="showSkills('programming')" class="skill-tab px-6 py-2 rounded-full bg-gray-300 text-gray-100 font-semibold
+               transition duration-300 hover:scale-105 bg-gradient-to-r from-[#102848] via-[#354861] to-[#102848]">
                     Programming
                 </button>
 
-                <button onclick="showSkills('office')" class="skill-tab px-6 py-2 rounded-full bg-gray-300 text-gray-800 font-semibold
-               transition duration-300 hover:scale-105 hover:bg-gray-400">
+                <button onclick="showSkills('office')" class="skill-tab px-6 py-2 rounded-full bg-gray-300 text-gray-100 font-semibold
+               transition duration-300 hover:scale-105 bg-gradient-to-r from-[#102848] via-[#354861] to-[#102848]">
                     Office & Design
                 </button>
 
@@ -252,7 +252,7 @@
                         <span>Python (Currently in Progress)</span><span>20%</span>
                     </div>
                     <div class="w-full bg-gray-700 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[75%]"></div>
+                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[20%]"></div>
                     </div>
                 </div>
 
@@ -261,7 +261,7 @@
                         <span>JavaScript (In Future)</span><span>2%</span>
                     </div>
                     <div class="w-full bg-gray-700 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[70%]"></div>
+                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[2%]"></div>
                     </div>
                 </div>
 
@@ -270,7 +270,7 @@
                         <span>Problem Solving (In Future)</span><span>10%</span>
                     </div>
                     <div class="w-full bg-gray-700 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[80%]"></div>
+                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[10%]"></div>
                     </div>
                 </div>
 
@@ -279,7 +279,7 @@
                         <span>Data Structures (In Future)</span><span>0%</span>
                     </div>
                     <div class="w-full bg-gray-700 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[65%]"></div>
+                        <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full w-[0%]"></div>
                     </div>
                 </div>
 
@@ -408,7 +408,7 @@
                         </p>
                         <div class="flex gap-4">
                             <a href="#" class="text-blue-400 hover:text-white transition font-semibold">Live Demo</a>
-                            <a href="#" class="text-purple-400 hover:text-white transition font-semibold">GitHub</a>
+                            <a href="https://github.com/ShaikIbrahimAhmed/Portfolio" class="text-purple-400 hover:text-white transition font-semibold">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -444,7 +444,7 @@
                         </div>
                         <div>
                             <p class="font-bold text-gray-200">Location</p>
-                            <p class="text-gray-400">Hyderabad,India</p>
+                            <p class="text-gray-400">Hyderabad, India</p>
                         </div>
                     </div>
                 </div>
@@ -467,24 +467,31 @@
         </div>
 
         <div class="bg-[#1e293b]/60 backdrop-blur-md border border-gray-700 p-10 rounded-3xl shadow-2xl">
-            <form action="#" class="space-y-6">
+            <!-- FORMSPREE WORKING FORM -->
+            <form id="contact-form" action="https://formspree.io/f/xjgezwen" method="POST" class="space-y-6">
+
                 <div>
                     <label class="block text-gray-300 font-semibold mb-2">Your Name</label>
-                    <input type="text" placeholder="John Doe" class="w-full px-4 py-4 rounded-xl border border-gray-700 bg-[#0f172a]/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+                    <input type="text" name="name" placeholder="John Doe" required class="w-full px-4 py-4 rounded-xl border border-gray-700 bg-[#0f172a]/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
                 </div>
+
                 <div>
                     <label class="block text-gray-300 font-semibold mb-2">Your Email</label>
-                    <input type="email" placeholder="john@example.com" class="w-full px-4 py-4 rounded-xl border border-gray-700 bg-[#0f172a]/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+                    <input type="email" name="email" placeholder="john@example.com" required class="w-full px-4 py-4 rounded-xl border border-gray-700 bg-[#0f172a]/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
                 </div>
+
                 <div>
                     <label class="block text-gray-300 font-semibold mb-2">Your Message</label>
-                    <textarea rows="4" placeholder="Your message here..." class="w-full px-4 py-4 rounded-xl border border-gray-700 bg-[#0f172a]/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"></textarea>
+                    <textarea name="message" rows="4" placeholder="Your message here..." required class="w-full px-4 py-4 rounded-xl border border-gray-700 bg-[#0f172a]/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"></textarea>
                 </div>
-                <button class="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-200">
+
+                <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#102848] via-[#354861] to-[#102848] text-white font-bold rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-200">
                     Send Message
                 </button>
+
             </form>
         </div>
+
     </div>
 </section>
 
